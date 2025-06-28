@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://files.catbox.moe/ayleb2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            backdrop-filter: blur(2px);
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .server-info {
+            background-color: rgba(238, 238, 238, 0.7);
+            padding: 8px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-family: monospace;
+            font-size: 14px;
+            text-align: center;
+        }
+        .status {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .status-label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .status-active {
+            color: green;
+        }
+        .payment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .payment-item {
+            background-color: rgba(249, 249, 249, 0.8);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            transition: transform 0.2s;
+        }
+        .payment-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .payment-method {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+        .payment-number {
+            color: #555;
+        }
+        .qris-container {
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .qris-image {
+            max-width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .qris-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Options</h1>
+        
+        <div class="server-info">
+            127.0.0.1:55:00/md...
+        </div>
+        
+        <div class="status">
+            <span class="status-label">Cold Fano</span>
+            <span class="status-active">ovo Aktif</span>
+        </div>
+        
+        <div class="qris-container">
+            <span class="qris-label">QRIS</span>
+            <img src="https://files.catbox.moe/qx919l.jpg" alt="QRIS Payment" class="qris-image">
+        </div>
+        
+        <h2>Daftar Payment</h2>
+        
+        <ul class="payment-list">
+            <li class="payment-item">
+                <div class="payment-method">DANA</div>
+                <div class="payment-number">No: 081398513467</div>
+            </li>
+            
+            <li class="payment-item">
+                <div class="payment-method">GOPAY</div>
+                <div class="payment-number">No: 081398513467</div>
+            </li>
+            
+            <li class="payment-item">
+                <div class="payment-method">OVO</div>
+                <div class="payment-number">No: 081398513467</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
